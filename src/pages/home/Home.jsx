@@ -1,12 +1,13 @@
 import React from 'react'
 import './home.css'
+import SideBar from '../../components/sidebar/SideBar'
 
-const Home = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+const Home = ({sidebar}) => {
+    return (
+        <>
+            <SideBar sidebar ={sidebar}/>
+        </>
+    )
 }
 
 export default Home
