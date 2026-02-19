@@ -10,10 +10,7 @@ const Feed = () => {
         upload_time: '2 days ago'
     }
     const cards = [
-        {
-            img: assests.thumbnail1,
-            id: 1
-        },
+        { img: assests.thumbnail1, id: 1 },
         { img: assests.thumbnail2, id: 2 },
         { img: assests.thumbnail3, id: 3 },
         { img: assests.thumbnail4, id: 4 },
@@ -33,7 +30,7 @@ const Feed = () => {
                     <p>{vid.total_views} views &bull; {vid.upload_time}</p>
                 </div>
             ))}
-              {cards.map(card => (
+            {cards.map(card => (
                 <div key={card.id} className='card'>
                     <img src={card.img} alt="" />
                     <h2>{vid.title}</h2>
